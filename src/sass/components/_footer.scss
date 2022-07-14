@@ -1,53 +1,192 @@
 .footer {
+    position: relative;
     background-color: var(--bgc-first_section-color);
 
     &__text {
-        font-family: 'Titan One';
+        font-family: var(--font-main);
         font-style: normal;
         font-weight: 400;
         text-transform: uppercase;
         @include mq(mobile-only) {
             font-size: 18px;
-            line-height: 0.85;
+            line-height: 21px;
+
+            max-width: 232px;
         }
         
         @include mq(tablet-only) {
             font-size: 26px;
-            line-height: 0.86;
+            line-height: 30px;
             letter-spacing: 0.04em;
+
+            max-width: 340px;
         }
 
         @include mq(desktop) {
             font-size: 30px;
-            line-height: 0.88;
+            line-height: 34px;
             letter-spacing: 0.04em;
         }
         color: var(--cream-text-color);
         margin-left: 0;
-        @include mq(mobile-only) {
-            max-width: 232px;
-        }
+        
     }
     &__accent-text {
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        text-transform: uppercase;
-        @include mq(mobile-only) {
-            font-size: 34px;
-            line-height: 0.87;
-            letter-spacing: 0.04em;
+        font-family: var(--font-main);
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: normal;
+        
+            @include mq(mobile-only) {
+                font-size: 34px;
+                line-height: 39px;
+                letter-spacing: 0.04em;
+        
+                max-width: 200px;
+                margin-top: 19px;
+            }
+        
+            @include mq(tablet-only) {
+                font-size: 48px;
+                line-height: 55px;
+                letter-spacing: 0.06em;
+        
+                max-width: 340px;
+                margin-top: 12px;
+            }
+        
+            @include mq(desktop) {
+                font-size: 58px;
+                line-height: 66px;
+                letter-spacing: 0.06em;
+
+                margin-top: 16px;
+            }
+        
+            color: var(--red-text-color);
+    }
+
+    &__socials-list {
+        display: flex;
+        justify-content: end;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    &__socials-item {
+        
+        border-radius: 50%;
+        border: 1px solid var(--bgc-icon-color);
+        background-color: var(--bgc-icon-color);
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:not(:last-child) {
+            margin-right: 28px;
         }
-        @include mq(tablet-only) {
-            font-size: 48px;
-            line-height: 0.87;
-            letter-spacing: 0.06em;
+        &:hover,
+        &:focus {
+            background-color: var(--white-text-color);
+            border: 1px solid var(--red-text-color);
+        }
+    }
+
+    &__socials-item:hover &__socials-icon,
+    &__socials-item:focus &__socials-icon {
+        fill: var(--red-text-color)
+    }
+
+    &__socials-link {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__socials-icon {
+        fill: var(--white-text-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__contact {
+        display: flex;
+        align-items: baseline;
+        justify-content: right;
+        margin-bottom: 60px;
+    }
+
+    &__contant-text {
+        font-family: var(--font-secondary);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        @include mq(tablet) {
+            font-size: 14px;
         }
         @include mq(desktop) {
-            font-size: 58px;
-            line-height: 0.87;
-            letter-spacing: 0.06em;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+        }
+        line-height: 1.86;
+    }
+    &__contact-tel {
+        font-family: var(--font-secondary);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        @include mq(tablet) {
+            font-size: 14px;
+        }
+        @include mq(desktop) {
+            font-size: 16px;
+            letter-spacing: 0.02em;
         }
         color: var(--red-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--white-text-color);
+            background-color: var(--bgc_second-btn-color);
+        }
+    }
+    &__copyright-text {
+        font-family: var(--font-secondary);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+        @include mq(tablet) {
+            line-height: 1.86;            
+            letter-spacing: 0.02em;
+        }
+        @include mq(desktop) {
+
+        }
+        text-align: center;
+        color: var(--grey-text-color);
+
+        @include mq(mobile-only) {
+            max-width: 133px;
+            @include centered
+        }
+    
+    }
+    &::after {
+        @include pseudo;
+        border: 1px solid #E1E1E1;
+        width: 100%;
+        left: 0;
+        @include mq(mobile-only) {
+            bottom: 61px;
+        }
+        @include mq(tablet) {
+            bottom: 42px;
+        }
+        @include mq(desktop) {
+            bottom: 37px;
+        }
     }
 }

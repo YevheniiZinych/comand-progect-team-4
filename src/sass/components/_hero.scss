@@ -8,6 +8,7 @@
 // }
 @include mq(mobile-only) {
     .hero {
+        margin-bottom: 60px;
 &__container {
     // max-width: 350px;
     margin-left: auto;

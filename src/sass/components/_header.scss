@@ -1,15 +1,14 @@
-*  {
-    list-style: none;
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+.header .container {
+    position: absolute;
+    display: flex;
 }
 .header {
     &__container {
     position: absolute;
     max-width: 320px;
-
-
+    }
+    &__logo {
+        padding-top: 8px;
     }
 }
 .header__nav {
@@ -35,15 +34,7 @@
 .current {
     color: #D41443;
 }
-
-@include mq(mobile-only) {
-    .header__container {
-    padding-top: 8px;
-    max-width: 320px;
-    display: flex;
-    align-items: center;
-}
-}        
+    
 
 @include mq(not-desktop) {
 .header__nav-list {
@@ -76,7 +67,6 @@
 
 @include mq(tablet-only) {
     .header {
-        z-index: 3;
     &__container {
     padding-top: 32px;
     // width: 768px; 

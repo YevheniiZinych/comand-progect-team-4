@@ -5,6 +5,9 @@
     #fff5f6 20%,
     #ffffff 20%
   );
+  .container {
+    padding: 0;
+  }
 }
 .gallery-wrapper {
   display: flex;
@@ -16,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  max-width: 320px;
   height: 136px;
   @include centered;
 }

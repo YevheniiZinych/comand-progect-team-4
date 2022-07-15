@@ -3,8 +3,13 @@
 
 @import './base/container';
 @import './base/reset';
-
+@import './components/mobile-menu';
+@import './components/button';
+@import './components/header';
+@import './components/hero';
 @import './components/gallery';
 
 @import './common';
 @import './example';
+
+

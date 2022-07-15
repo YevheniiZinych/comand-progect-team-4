@@ -1,0 +1,57 @@
+.menu-container {
+        height: 100%;
+@include mq(mobile-only) {
+        width: 100%;
+        }
+
+        @include mq(not-desktop) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        color: white;
+        background-color: #E17992;
+        position: fixed ;
+        top: 0;
+        left: 0;
+        display: flex;
+        z-index: 250;
+        transform: translateX(100%);
+        @include mq(tablet-only) {
+        transform: translateX(700%);
+        }
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        &.is-open {
+        @include mq(mobile-only) {
+        transform: translateX(0);
+        position: fixed;
+        }
+        @include mq(tablet-only) {
+        transform: translateX(200%);
+        position: fixed;
+        width: calc(100% / 3);
+        height: 100%;
+        }
+        }
+        }
+        }
+.menu-toggle {
+        border: none;
+        background-color: transparent;
+        margin-left: auto;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+}
+.js-close-menu {
+position: absolute;
+right: 20px;
+top: 20px;
+}
+
+.js-open-menu {
+position: fixed;
+right: 20px;
+top: 20px;
+}

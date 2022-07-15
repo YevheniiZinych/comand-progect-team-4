@@ -1,10 +1,21 @@
 
-.button[type='button'] {
-    display: inline-flex;
+// .button[type='button'] {
+//     display: inline-flex;
+// }
+.header .not-modal{
+@include mq(mobile-only) {
+    display: none;
 }
-.header__menu-button {
-    margin-left: auto;
+@include mq(tablet) {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 32px;
+    min-width: 160px;
+    padding: 0px;
 }
+}
+
+
 
 .header__buy-button {
     display: block;
@@ -25,22 +36,16 @@
     border-color: transparent;
     background-color: var(--white-text-color);
     // box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-
     @include mq(mobile-only) {
     min-width: 209px;
     margin-bottom: 19px;
     }
-    @media screen and (min-width: 769px) {
-        
-    display: block;
-    width: 160px;
-    height: 44px;
-    margin-right: 32px;
-}
-    @include mq(desktop) {
-        order: 1;
+    @include mq (tablet-only) {
+    min-width: 184px;
+    margin-bottom: 20px;
     }
 }
+
 
 .hero__button-paragraph {
     display: none;

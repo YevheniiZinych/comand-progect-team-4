@@ -1,20 +1,22 @@
 .header .container {
+    width: 100%;
     position: absolute;
     display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    @include mq(tablet-only) {
+        margin-top: 32px;
+        z-index: 2;
+    }
 }
 .header {
-    &__container {
-    position: absolute;
-    max-width: 320px;
-    }
     &__logo {
-        padding-top: 8px;
+        // padding-top: 8px;
     }
 }
 .header__nav {
     width: 100%;
 }
-
     .header__nav-item {
     display: inline-flex;
     margin: 0px;
@@ -30,12 +32,9 @@
     padding-bottom: 5px;
     display: inline-flex;
 }
-
 .current {
     color: #D41443;
 }
-    
-
 @include mq(not-desktop) {
 .header__nav-list {
                 display: flex;
@@ -57,27 +56,14 @@
         {
             border-top: none;
         }
-        .header__logo {
-            // margin-left: 20px;
-        }
-        .header__menu-button {
-            // margin-right: 20px;
-        }
         }
 
 @include mq(tablet-only) {
     .header {
     &__container {
     padding-top: 32px;
-    // width: 768px; 
     display: flex;
-    align-items: center;
-}
-&__logo {
-    margin-left: 32px;
-}
-    &__menu-button {
-    margin-right: 32px;
+    // align-items: center;
 }
 }
 }

@@ -88,7 +88,6 @@
     padding-top: 102px;
     padding-bottom: 190px;
     margin-left: 32px;
-
 }
 @include mq(desktop) {
 padding-top: 147px;
@@ -96,7 +95,6 @@ padding-left: 16px;
 margin-left: 16px;
 }
 }
-
 &__content-list {
     @include mq(mobile-only) {
     display: none;
@@ -134,7 +132,7 @@ margin-left: 16px;
     font-size: 14px;
     line-height: 1.4;
     left: 229px;
-    bottom: 165px;
+    bottom: 230px;
 }
 }
 }

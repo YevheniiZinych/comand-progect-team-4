@@ -1,6 +1,8 @@
 .footer {
     position: relative;
-    background-color: var(--bgc-first_section-color);
+    & {
+        background-color: var(--bgc-first_section-color);
+    }
 
     &__info {
         @include mq(tablet) {

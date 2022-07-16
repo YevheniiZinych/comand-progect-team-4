@@ -2,23 +2,20 @@
   background-image: linear-gradient(
     to bottom,
     var(--bgc-first_section-color) 20%,
-    var(--bgc-first_section-color) 20%,
-    var(--bgc_first-btn-color) 20%
+    var(--bgc-secondary_section-color) 20%
   );
   @include mq(tablet-only) {
     background-image: linear-gradient(
       to bottom,
       var(--bgc-first_section-color) 40%,
-      var(--bgc-first_section-color) 40%,
-      var(--bgc_first-btn-color) 40%
+      var(--bgc-secondary_section-color) 40%
     );
   }
   @include mq(desktop) {
     background-image: linear-gradient(
       to bottom,
       var(--bgc-first_section-color) 20%,
-      var(--bgc-first_section-color) 20%,
-      var(--bgc_first-btn-color) 20%
+      var(--bgc-secondary_section-color) 20%
     );
   }
   .container {

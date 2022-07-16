@@ -67,7 +67,6 @@
     flex-wrap: wrap;
     display: flex;
 }
-
 .card-item {
     margin-top: 20px;
     flex-basis: calc(100% / var(--card-item) - var(--card-gap));

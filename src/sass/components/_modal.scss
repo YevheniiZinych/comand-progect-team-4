@@ -18,9 +18,7 @@
 }
 
 .modal-read-more,
-.prod-ice,
-.prod-milk,
-.prod-coffee {
+.prod-ice {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,6 +40,43 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%);
   }
+}
+
+.prod-milk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  max-width: calc(100% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 'DM Sans', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 40px;
+  width: 450px;
+  background: linear-gradient(-135deg, #F3EEBD 0%, #A7F5A6 100%);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prod-coffee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  max-width: calc(100% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 'DM Sans', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 40px;
+  width: 450px;
+  background: linear-gradient(180deg, #E9BA42 16.15%, #F6FEDF 100%);
 }
 
 .modal-read-more__icon {

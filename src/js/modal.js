@@ -26,7 +26,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle("modal-open-ice")
+    // document.body.classList.toggle("modal-open-ice")
     refs.modal.classList.toggle("is-hidden");  
   }
 })();    
@@ -43,7 +43,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle("modal-open-coffe")
+    // document.body.classList.toggle("modal-open-coffe")
     refs.modal.classList.toggle("is-hidden");  
   }
 })();    
@@ -60,7 +60,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle("modal-open-shakes")
+    // document.body.classList.toggle("modal-open-shakes")
     refs.modal.classList.toggle("is-hidden");  
   }
 })();     
@@ -82,3 +82,36 @@
   }
 })();
 
+
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open-fr]"),
+    closeModalBtn: document.querySelector("[data-modal-close-fr]"),
+    modal: document.querySelector("[data-modal-fr]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    // document.body.classList.toggle("modal-open-fr")
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open-loc]"),
+    closeModalBtn: document.querySelector("[data-modal-close-loc]"),
+    modal: document.querySelector("[data-modal-loc]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    // document.body.classList.toggle("modal-open-fr")
+    refs.modal.classList.toggle("modal-is-hidden");
+  }
+})();

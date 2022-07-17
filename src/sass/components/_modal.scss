@@ -22,12 +22,17 @@
   transform: translate(-50%, -50%);
   z-index: 100;
   max-width: calc(100% - 30px);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 'DM Sans', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
   padding: 40px;
-
   width: 450px;
 
-  background-color: #ffffff;
+  background: linear-gradient(to left, #ee9ca7, #ffdde1);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%);
@@ -41,12 +46,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ee9ca7;
+  border: 1px solid transparent;
   box-sizing: border-box;
   padding: 0;
   cursor: pointer;
 }
+
+.modal-read-more__close {
+  border: transparent;
+  background-color: transparent;
+}
+

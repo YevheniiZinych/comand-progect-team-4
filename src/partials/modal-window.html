@@ -2,7 +2,7 @@
 <!-- Модальне вікно кнопки BUY NOW -->
 
 <!-- Бекдроп -->
-<div class="buy-backdrop is-hidden" data-modal data-modal2>
+<div class="buy-backdrop is-hidden modal" data-modal data-modal2>
     <!-- Модальне вікно -->
     <div class="buy-modal">
       <!-- Кнопка закриття модального вікна -->
@@ -18,7 +18,7 @@
         <!-- Заголовок форми -->
         <p class="buy-modal__title section-title">Follow your dream</p>
 
-        <!-- Чекбоксы -->
+        <!-- Чекбокси -->
         <ul class="buy-modal__list">
           <li class="buy-modal__item">
             <picture>
@@ -157,9 +157,9 @@
 
 <!--OUR LOCATION-->
 
-<div class="contacts-location modal-is-hidden contacts-location-modal" >
+<div class="contacts-location modal-is-hidden contacts-location-modal" data-modal>
     <div class="location-map">
-        <button type="button" class="contacts-location-close contacts-location-modal-close" >
+        <button type="button" class="contacts-location-close contacts-location-modal-close" data-modal-close>
             <svg class="location-map__close-icon" width="18px" height="18px">
                 <use href="./images/modal-windows/header.svg#close-icon">
                 </use>
@@ -181,9 +181,9 @@
 
 
 <!--FRANCHISE-->
-<div class="contacts-franchise modal-is-hidden contacts-franchise-modal" >
+<div class="contacts-franchise modal-is-hidden contacts-franchise-modal" data-modal>
     <div class="franchise-modal">
-         <button type="button" class="contacts-franchise-close contacts-franchise-modal-close" >
+         <button type="button" class="contacts-franchise-close contacts-franchise-modal-close" data-modal-close>
              <svg class="franchise-modal__close-icon" width="18px" height="18px">
                  <use href="./images/modal-windows/header.svg#close-icon"></use>
              </svg>

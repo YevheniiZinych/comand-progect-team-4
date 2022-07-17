@@ -1,8 +1,6 @@
 .reviews{
     margin-bottom: 60px;
 
-    
-
     &__inner{
         position: relative;
     }
@@ -48,7 +46,6 @@
         text-align: center;
 
         @include mq(tablet-only) {
-                
                 max-width: 514px;
                 height: 108px;
 
@@ -238,18 +235,23 @@
     border: none;
 }
 
-
-
 .slick-dots li:nth-child(1) button::after{
     content: '';
-     position: absolute;
+    position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 12px;
     height: 12px;
+    background-image: url(../images/reviews/slider-btn-2.svg);
+}
+
+.slick-dots li:nth-child(1).slick-active button::after{
     background-image: url(../images/reviews/slider-btn.svg);
 }
 
 .slick-dots li:nth-child(1) button{
     background-color: transparent;
 }
+
+

@@ -103,11 +103,7 @@ transition-duration: 250ms;
     color: var(--white-text-color);
 }
 }
-
-
-
 @include mq(tablet) {
-
 .hero__button-paragraph {
     display: block;
     background-image: url('../images/hero/arrow-right.jpg');
@@ -115,7 +111,7 @@ transition-duration: 250ms;
     background-position: center;
     background-size: contain;
     background-color: var(--white-text-color);
-    position: absolute;
+    // position: absolute;
     left: 184px;
     bottom: 56px;
     border-radius: 100%;
@@ -124,9 +120,15 @@ transition-duration: 250ms;
     height: 18px;
     @include mq(desktop) {
         left: 229px;
-        bottom: 104px;
+        bottom: 180px;
     }
     }
     }
+.hero__button-paragraph {
+@include mq(mobile-only) {
+display: none;
+}
+}
+        
 
 

@@ -105,6 +105,7 @@
     height: 105px;
   }
   @include mq(desktop) {
+    border-radius: 20px;
     height: 138px;
   }
   &:not(:last-child) {

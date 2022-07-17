@@ -37,7 +37,7 @@
     transition: transform 250ms;
 
     @media screen and (min-width: 480px) {
-      height: 80vh;
+     height: 80vh;
       width: 450px;
     }
     @media screen and (min-width: 768px) {
@@ -47,7 +47,7 @@
     @media screen and (min-width: 1280px) {
       width: 85vw;
       height: 95vh;
-    }
+    } 
   }
   .location-form {
     margin: 0 auto;

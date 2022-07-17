@@ -48,8 +48,8 @@
       width: 450px;
     }
     @media screen and (min-width: 768px) {
-      width: 600px;
-      min-height: 600px;
+      width: 500px;
+      min-height: 400px;
     }
   }
   
@@ -60,12 +60,15 @@
     background-color: transparent;
     cursor: pointer;
     padding: 13px;
+    border-radius: 50%;
+    border: 1px solid var(--red-text-color);
    
     display: flex;
     justify-content: center;
     align-items: center;
 
     &:hover, &:focus {
+      background-color: var(--bgc-products_first-color);
         cursor: pointer;
     }
   }
@@ -261,6 +264,9 @@
   
   .send-btn {
     font-family: 'DM Sans', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: var(--red-text-color);
     margin: 30px auto 0;
     width: 160px;
     height: 44px;
@@ -270,5 +276,11 @@
     & .first-btn__start {
       padding: 0;
     }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid var(--red-text-color);
+    background-color: var(--bgc-products_first-color);
   }
   

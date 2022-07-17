@@ -1,3 +1,5 @@
+// Модальне вікно READ MORE
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -15,7 +17,10 @@
   pointer-events: none;
 }
 
-.modal-read-more {
+.modal-read-more,
+.prod-ice,
+.prod-milk,
+.prod-coffee {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,4 +65,6 @@
   border: transparent;
   background-color: transparent;
 }
+
+
 

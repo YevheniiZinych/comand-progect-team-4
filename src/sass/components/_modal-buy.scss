@@ -47,10 +47,13 @@
     @media screen and (min-width: 480px) {
       padding: 30px;
       width: 450px;
+      
     }
     @media screen and (min-width: 768px) {
       width: 500px;
       min-height: 400px;
+      z-index: 30;
+      position: relative;
     }
   }
   

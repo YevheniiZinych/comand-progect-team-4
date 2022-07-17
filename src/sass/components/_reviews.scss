@@ -238,18 +238,31 @@
     border: none;
 }
 
-
+.slick-dots li.slick-active button::after{
+    fill: green;
+}
 
 .slick-dots li:nth-child(1) button::after{
     content: '';
-     position: absolute;
+    position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 12px;
     height: 12px;
     background-image: url(../images/reviews/slider-btn.svg);
+    
 }
+
+.slick-dots li:nth-child(1) button::after.home-btn
+
+// ../images/reviews/symbol-defs.svg#icon-slider-btn
 
 .slick-dots li:nth-child(1) button{
     background-color: transparent;
 }
+
+.home-btn{
+    fill: black;
+}
+

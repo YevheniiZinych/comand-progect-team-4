@@ -319,18 +319,23 @@
     background-origin: border-box;
     border: var(--bgc_second-btn-color);
     border-radius: 2px;
+    background-position: center;
+    background-image: url('/src/images/modal-windows/bird.svg');
+    background-repeat: no-repeat;
   }
 }
+
+
 .franchise-checkbox__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.03em;
   font-family: sans-serif;
-  color: var( --bgc_second-btn-color);
+  color: var(--red-text-color);
 
   @media screen and (min-width: 768px) {
-    color: var(--white-text-color);
+    color: var(--red-text-color);
   }
 }
 .franchise-checkbox {

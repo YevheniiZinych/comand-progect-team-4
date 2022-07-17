@@ -11,7 +11,7 @@
     height: 100vh;
     z-index: 999;
     overflow-y: scroll;
-    background-color: rgba(245, 237, 206, 0.4);
+    background-color: rgba(231, 226, 203, 0.404);
   }
   
   .modal-is-hidden {
@@ -29,7 +29,7 @@
     left: 50%;
     padding: 10px 10px;
   
-    background: linear-gradient(to left, #ee9ca7, #ffdde1);
+    background: linear-gradient(-180deg, #e73570 0%, #FFEBE6 100%);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -61,8 +61,7 @@
     }
   }
   
-  .contacts-location-close,
-  .contacts-franchise-close {
+  .contacts-location-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -74,16 +73,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c7133e;
-    border: 1px solid var(--red-text-color);
+  
+    background-color: #f5a8c2;
+    border: 1px solid transparent;
     border-radius: 50%;
     fill: #fff;
+    transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
     &:hover,
     &:focus {
-      background-color: #b8153b;
+      background-color:#e73f77;
+      border: 1px solid var(--bgc-products_second-color);
+      border-radius: 50%;
+      fill: #FFFFFF;
     }
   }
+ 
   
   .location-form__title {
     display: block;
@@ -95,7 +101,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    color: var(--red-text-color);
+    color: var(--white-text-color);
     @media screen and (min-width: 768px){
       font-size: 25px;
       margin-bottom: 25px;

@@ -26,12 +26,12 @@
 }
 
 .upward.active{
-    bottom: 10px;
+    bottom: 50px;
     visibility: visible;
     opacity: 1;
 
     @include mq(tablet){
-        bottom: 20px;
+        bottom: 40px;
     }
 
     @include mq(desktop){

@@ -1,7 +1,9 @@
 .header .container {
-    max-width: 100%;
-    position: absolute;
+    width: 100%;
+    position: fixed;
     display: flex;
+    z-index: 55;
+    // background-color: #ffb8ca;
     justify-content: space-between;
     margin-top: 8px;
     @include mq(tablet-only) {
@@ -12,8 +14,6 @@
         margin-top: 52px;
         align-items: center;
     }
-}
-.header {
 }
 .header__nav {
     width: 100%;

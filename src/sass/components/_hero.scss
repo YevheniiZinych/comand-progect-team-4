@@ -9,30 +9,30 @@
     height: 502px;
     background-color: #ffb8ca;
         background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        // background-position: bottom left 117px, top 83px left 36px;
-        background-position: center bottom, center 83px;
+
+        background-position: top 92px left 117px, top 83px  left 36px;
         background-repeat: no-repeat;
         animation: bgm 1000ms linear 1 forwards;
         @keyframes bgm {
             0% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 700px, center 300px;
+        background-position: top 292px left 117px, top -153px  left 36px;
             }
             25% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 500px, center 200px;
+        background-position: top 252px left 117px, top -103px  left 36px;
             }
             50% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 300px, center 100px;
+        background-position: top 202px left 117px, top -53px  left 36px;
             }
             75% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 100px, center 0px;
+        background-position: top 152px left 117px, top 23px  left 36px;
             }
             100% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom, center 83px;
+        background-position: top 92px left 117px, top 83px  left 36px;
             }
         }
 
@@ -83,24 +83,24 @@ background-position: center bottom, center 83px;
     url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
     background-repeat: no-repeat;
     background-position: right 328px bottom 0px, bottom 60px left 16px, bottom 1px right 16px, right 149px bottom 76px;
-    animation: bg 2000ms linear 1 forwards;
-    @keyframes bg {
+    animation: bgd 2000ms linear 1 forwards;
+    @keyframes bgd {
     0% {
         background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
     url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
-    background-position: right 328px bottom 700px, bottom 60px left 1600px, bottom -400px right 16px, right 1490px bottom 76px;
+    background-position: right 328px bottom 600px, bottom 60px left 1600px, bottom -400px right 16px, right 1490px bottom 76px;
     }
     25% {
         background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
     url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
-    background-position: right 328px bottom 500px, bottom 60px left 1000px, bottom -300px right 16px, right 900px bottom 76px;
+    background-position: right 328px bottom 400px, bottom 60px left 1000px, bottom -300px right 16px, right 900px bottom 76px;
     }
     50% {
         background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
     url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
     background-position: right 328px bottom 300px, bottom 60px left 600px, bottom -200px right 16px, right 600px bottom 76px;
     }
-        75% {
+    75% {
         background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
     url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
     background-position: right 328px bottom 100px, bottom 60px left 300px, bottom -100px right 16px, right 300px bottom 76px;
@@ -179,11 +179,11 @@ background-position: center bottom, center 83px;
 @include mq(tablet-only) {
     padding-top: 102px;
     padding-bottom: 190px;
-    margin-left: 32px;
+    // margin-left: 32px;
 }
 @include mq(desktop) {
 padding-top: 147px;
-padding-left: 16px;
+// padding-left: 16px;
 margin-left: 16px;
 }
 }
@@ -228,6 +228,14 @@ margin-left: 16px;
 }
 }
 }
+
+.hero__button-paragraph:hover, 
+.hero__button-paragraph:focus {
+    cursor: pointer;
+    fill: #fff;
+}
+
+
 .hero {
 &__content-item {
 background-repeat: no-repeat;
@@ -292,3 +300,10 @@ left: 229px;
 bottom: 84px;
 }
 }
+
+.video {
+    width: 480px;
+    height: 320px;
+    display: flex;
+    
+  }

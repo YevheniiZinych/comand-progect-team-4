@@ -228,6 +228,14 @@ margin-left: 16px;
 }
 }
 }
+
+.hero__button-paragraph:hover, 
+.hero__button-paragraph:focus {
+    cursor: pointer;
+    fill: #fff;
+}
+
+
 .hero {
 &__content-item {
 background-repeat: no-repeat;
@@ -292,3 +300,10 @@ left: 229px;
 bottom: 84px;
 }
 }
+
+.video {
+    width: 480px;
+    height: 320px;
+    display: flex;
+    
+  }

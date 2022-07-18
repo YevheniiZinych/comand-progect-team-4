@@ -10,29 +10,29 @@
     background-color: #ffb8ca;
         background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
         // background-position: bottom left 117px, top 83px left 36px;
-        background-position: center bottom, center 83px;
+        background-position: top 92px left 117px, top 83px  left 36px;
         background-repeat: no-repeat;
         animation: bgm 1000ms linear 1 forwards;
         @keyframes bgm {
             0% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 700px, center 300px;
+        background-position: top 292px left 117px, top -153px  left 36px;
             }
             25% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 500px, center 200px;
+        background-position: top 252px left 117px, top -103px  left 36px;
             }
             50% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 300px, center 100px;
+        background-position: top 202px left 117px, top -53px  left 36px;
             }
             75% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom 100px, center 0px;
+        background-position: top 152px left 117px, top 23px  left 36px;
             }
             100% {
 background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-background-position: center bottom, center 83px;
+        background-position: top 92px left 117px, top 83px  left 36px;
             }
         }
 

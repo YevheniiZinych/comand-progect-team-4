@@ -23,6 +23,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
         &.is-open {
+                display: flex;
         @include mq(mobile-only) {
         transform: translateX(0);
         position: fixed;

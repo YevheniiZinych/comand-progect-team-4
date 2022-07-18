@@ -129,7 +129,7 @@
 
   function toggleModal() {
     // document.body.classList.toggle("modal-open-fr")
-    refs.modal.classList.toggle("modal-is-hidden");
+    refs.modal.classList.toggle("is-hidden");
   }
 })();
 

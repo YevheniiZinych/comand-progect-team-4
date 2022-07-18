@@ -10,7 +10,7 @@
             margin-bottom: 60px;
         }
 }
-.section {
+.contacts {
     margin-top: 60px;
     padding-bottom: 40px;
     background-color: #FFF5F6;
@@ -174,6 +174,7 @@
     justify-content: center;
     text-align: center;
     font-family: inherit;
+    cursor: pointer;
     border-radius: 22px;
     border: none;
     font-weight: 700;
@@ -188,10 +189,11 @@
     }
 }
 .button-red {
-    background-color: var(--bgc_second-btn-color);
+    background-color: var(--red-text-color);
     color: var(--white-text-color);
     margin-bottom: 10px;
     width: 161px;
+    transition: background-color var(--transition-duration) var(--transition-timing);
     @media screen and (min-width: 768px) {
         margin-right: 14px;
         width: 192px;
@@ -201,10 +203,13 @@
         width: 198px;
     }
 }
+.button-red:hover, .button-red:focus {
+    background-color: #b10631;
+}
 .button-white {
     background-color: var(--bgc_first-btn-color);
     color: var(--red-text-color);
-    transition: background-color --transition-duration var(--transition-timing);
+    transition: background-color var(--transition-duration) var(--transition-timing);
 }
 .button-white:hover, .button-white:focus {
     background-color: #ECEBEB;

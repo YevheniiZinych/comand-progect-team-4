@@ -1,15 +1,26 @@
+@keyframes appear {
+    0% {
+      transform: scale(50%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(100%);
+      opacity: 1;
+    }
+    }
+
 .advantages {
-    padding-top: 66px;
+    padding-top: 106px;
     padding-bottom: 60px;
     background-color: #FFF5F6;
 
     @include mq(tablet-only) {
-       padding-top: 86px;
+       padding-top: 146px;
        padding-bottom: 64px;
     }
 
     @include mq(desktop) {
-        padding-top: 90px;
+        padding-top: 150px;
         padding-bottom: 120px;
     }
 }
@@ -69,6 +80,16 @@
     line-height: 170%;
     color: var(--black-text-color);
     text-align: start;
+
+    @include mq(tablet-only) {
+        font-size: 14px;
+        line-height: 174%;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+        line-height: 176%;
+    }
 }
 
 .advantages__item--milk {
@@ -76,7 +97,7 @@
 
     @include mq(tablet-only) {
         max-width: 180px;
-        margin-right: 4px;
+        margin-right: 21px;
     }
 
     @include mq(desktop) {
@@ -95,8 +116,10 @@
     width: 33px;
     height: 50px;
     background-image: url('../images/advantages/adv-1.png');
-    
 
+    animation: appear 10s linear infinite;
+    animation-direction: alternate;
+    
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -104,14 +127,10 @@
   }
 
   @include mq(tablet-only) {
-    content: '';
-    position: absolute;
+    
     top: -85px;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 33px;
-    height: 50px;
+   
     background-image: url('../images/advantages/adv-1-tab-1x.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -122,14 +141,10 @@
   }
 
   @include mq(desktop) {
-    content: '';
-    position: absolute;
+    
     top: -90px;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 33px;
-    height: 50px;
+   
     background-image: url('../images/advantages/adv-1-desk-1x.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -165,6 +180,9 @@
     height: 50px;
     background-image: url('../images/advantages/adv-2.png');
 
+    animation: appear 10s linear infinite;
+    animation-direction: alternate;
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -172,14 +190,10 @@
   }
 
   @include mq(tablet-only) {
-    content: '';
-    position: absolute;
+    
     top: -85px;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+
     background-image: url('../images/advantages/adv-2-tab-1x.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -190,14 +204,10 @@
   }
 
   @include mq(desktop) {
-    content: '';
-    position: absolute;
+    
     top: -90px;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+    
     background-image: url('../images/advantages/adv-2-desk-1x.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -232,6 +242,9 @@
     height: 50px;
     background-image: url('../images/advantages/adv-3.png');
 
+    animation: appear 10s linear infinite;
+    animation-direction: alternate;
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -239,14 +252,10 @@
   }
 
   @include mq(tablet-only) {
-    content: '';
-    position: absolute;
+    
     top: -85px;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 44px;
-    height: 50px;
+    
     background-image: url('../images/advantages/adv-3-tab-1x.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -257,14 +266,10 @@
   }
 
   @include mq(desktop) {
-    content: '';
-    position: absolute;
+    
     top: -90px;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 44px;
-    height: 50px;
+    
     background-image: url('../images/advantages/adv-3-desk-1x.png');
 
     @media (min-device-pixel-ratio: 2),

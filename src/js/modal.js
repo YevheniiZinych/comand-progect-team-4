@@ -65,7 +65,7 @@
   }
 })();     
 
-
+// Модалка на buy now в десктопній версії
 
 (() => {
   const refs = {
@@ -82,7 +82,7 @@
   }
 })();
 
-
+// Модалка на кнопці Franchise
 
 (() => {
   const refs = {
@@ -100,6 +100,8 @@
   }
 })();
 
+
+// Модалка на кнопці Our locations
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open-loc]"),
@@ -117,6 +119,9 @@
 })();
 
 
+
+// Модалка на buy now в таблетці та моб версії
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open2]"),
@@ -130,6 +135,25 @@
   function toggleModal() {
     // document.body.classList.toggle("modal-open-fr")
     refs.modal.classList.toggle("is-hidden");
+  }
+})();
+
+
+
+// Модалка на кнопку в секції HERO 
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open-hero]"),
+    closeModalBtn: document.querySelector("[data-modal-close-hero]"),
+    modal: document.querySelector("[data-modal-hero]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+   refs.modal.classList.toggle("is-hidden");
   }
 })();
 

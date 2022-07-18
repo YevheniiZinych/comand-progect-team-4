@@ -1,6 +1,6 @@
 .header .container {
-    width: 100%;
-    position: fixed;
+    max-width: 100%;
+    position: absolute;
     display: flex;
     z-index: 55;
     // background-color: #ffb8ca;
@@ -11,7 +11,7 @@
         z-index: 2;
     }
     @include mq(desktop) {
-        margin-top: 52px;
+        margin-top: 37px;
         align-items: center;
     }
 }

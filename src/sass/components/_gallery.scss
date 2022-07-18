@@ -1,10 +1,23 @@
 .gallery {
   background-image: linear-gradient(
     to bottom,
-    #fff5f6 20%,
-    #fff5f6 20%,
-    #ffffff 20%
+    var(--bgc-first_section-color) 20%,
+    var(--bgc-secondary_section-color) 20%
   );
+  @include mq(tablet-only) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bgc-first_section-color) 40%,
+      var(--bgc-secondary_section-color) 40%
+    );
+  }
+  @include mq(desktop) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bgc-first_section-color) 20%,
+      var(--bgc-secondary_section-color) 20%
+    );
+  }
   .container {
     padding: 0;
   }
@@ -14,6 +27,9 @@
   justify-content: center;
 
   margin-bottom: 60px;
+  @include mq(desktop) {
+    margin-bottom: 120px;
+  }
 }
 .gallery-wrapper__list {
   display: flex;
@@ -22,11 +38,25 @@
   max-width: 320px;
   height: 136px;
   @include centered;
+  @include mq(tablet-only) {
+    max-width: 768px;
+    height: 327px;
+  }
+  @include mq(desktop) {
+    max-width: 1013px;
+    height: 430px;
+  }
 }
 .gallery-wrapper__item {
   max-width: calc((100% / 7) - 2px);
   &:not(:last-child) {
     margin-right: 2px;
+    @include mq(tablet-only) {
+      margin-right: 4px;
+    }
+    @include mq(desktop) {
+      margin-right: 6px;
+    }
   }
   &.center {
     min-width: 80px;
@@ -35,6 +65,24 @@
     }
     & .gallery-wrapper__pic:last-child {
       width: 40px;
+    }
+    @include mq(tablet-only) {
+      min-width: 215px;
+      & .gallery-wrapper__pic:first-child {
+        height: 214px;
+      }
+      & .gallery-wrapper__pic:last-child {
+        width: 105px;
+      }
+    }
+    @include mq(desktop) {
+      min-width: 283px;
+      & .gallery-wrapper__pic:first-child {
+        height: 283px;
+      }
+      & .gallery-wrapper__pic:last-child {
+        width: 138px;
+      }
     }
   }
   &:nth-child(4) {
@@ -52,8 +100,22 @@
 .gallery-wrapper__pic {
   border-radius: 8px;
   height: 40px;
+  @include mq(tablet-only) {
+    border-radius: 20px;
+    height: 105px;
+  }
+  @include mq(desktop) {
+    border-radius: 20px;
+    height: 138px;
+  }
   &:not(:last-child) {
     margin-bottom: 2px;
+    @include mq(tablet-only) {
+      margin-bottom: 6px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 8px;
+    }
   }
   transition: box-shadow var(--transition-duration) var(--transition-timing),
     transform var(--transition-duration) var(--transition-timing);

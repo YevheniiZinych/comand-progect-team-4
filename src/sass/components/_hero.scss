@@ -9,8 +9,8 @@
     height: 502px;
     background-color: #ffb8ca;
         background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+
         background-position: top 92px left 117px, top 83px  left 36px;
-        background-position: center bottom, center 83px;
         background-repeat: no-repeat;
         animation: bgm 1000ms linear 1 forwards;
         @keyframes bgm {
@@ -228,6 +228,14 @@ margin-left: 16px;
 }
 }
 }
+
+.hero__button-paragraph:hover, 
+.hero__button-paragraph:focus {
+    cursor: pointer;
+    fill: #fff;
+}
+
+
 .hero {
 &__content-item {
 background-repeat: no-repeat;
@@ -292,3 +300,10 @@ left: 229px;
 bottom: 84px;
 }
 }
+
+.video {
+    width: 480px;
+    height: 320px;
+    display: flex;
+    
+  }

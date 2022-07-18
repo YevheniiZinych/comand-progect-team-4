@@ -1,20 +1,23 @@
 .header .container {
-    position: absolute;
+    width: 100%;
+    position: fixed;
     display: flex;
-}
-.header {
-    &__container {
-    position: absolute;
-    max-width: 320px;
+    z-index: 55;
+    // background-color: #ffb8ca;
+    justify-content: space-between;
+    margin-top: 8px;
+    @include mq(tablet-only) {
+        margin-top: 32px;
+        z-index: 2;
     }
-    &__logo {
-        padding-top: 8px;
+    @include mq(desktop) {
+        margin-top: 52px;
+        align-items: center;
     }
 }
 .header__nav {
     width: 100%;
 }
-
     .header__nav-item {
     display: inline-flex;
     margin: 0px;
@@ -29,13 +32,16 @@
     padding-top: 5px;
     padding-bottom: 5px;
     display: inline-flex;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    &:hover, &:focus {
+        color: var(--red-text-color);
+    }
 }
-
-.current {
-    color: #D41443;
-}
-    
-
+// .current {
+//     color: #D41443;
+// }
 @include mq(not-desktop) {
 .header__nav-list {
                 display: flex;
@@ -57,34 +63,22 @@
         {
             border-top: none;
         }
-        .header__logo {
-            // margin-left: 20px;
-        }
-        .header__menu-button {
-            // margin-right: 20px;
-        }
         }
 
 @include mq(tablet-only) {
     .header {
     &__container {
     padding-top: 32px;
-    // width: 768px; 
     display: flex;
-    align-items: center;
-}
-&__logo {
-    margin-left: 32px;
-}
-    &__menu-button {
-    margin-right: 32px;
+    width: 250px;
+    // align-items: center;
 }
 }
 }
 
 
 
-@include mq(desk) {
+@include mq(desktop) {
 .header {
         width: 1280px;
 &__container {
@@ -104,15 +98,13 @@
     margin-right: 35px;
     color: white;
 }
-&__buy-button {
-    display: block;
-    margin-left: auto;
-}
-&__menu-button {
-    display: none;
 }
 }
+
+
+
+
 .menu-container {
 display: block;
 }
-}
+

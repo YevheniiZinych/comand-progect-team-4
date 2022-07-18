@@ -1,6 +1,15 @@
 .footer {
     position: relative;
-    background-color: var(--bgc-first_section-color);
+    & {
+        background-color: var(--bgc-first_section-color);
+    }
+
+    &__info {
+        @include mq(tablet) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
     &__text {
         font-family: var(--font-main);
@@ -70,13 +79,15 @@
         display: flex;
         justify-content: end;
         margin-top: 40px;
+        @include mq(tablet) {
+            margin-top: 60px;
+        }
         margin-bottom: 40px;
         margin-right: 0;
     }
     &__socials-item {
         
         border-radius: 50%;
-        border: 1px solid var(--bgc-icon-color);
         background-color: var(--bgc-icon-color);
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,14 +97,8 @@
         }
         &:hover,
         &:focus {
-            background-color: var(--white-text-color);
-            border: 1px solid var(--red-text-color);
+            background-color: var(--red-text-color);
         }
-    }
-
-    &__socials-item:hover &__socials-icon,
-    &__socials-item:focus &__socials-icon {
-        fill: var(--red-text-color)
     }
 
     &__socials-link {
@@ -113,6 +118,9 @@
         align-items: baseline;
         justify-content: right;
         margin-bottom: 60px;
+        @include mq(tablet) {
+            margin-bottom: 67px;
+        }
     }
 
     &__contant-text {
@@ -133,6 +141,7 @@
         font-weight: 700;
         font-size: 12px;
         line-height: 1.86;
+        border-radius: 5px;
         @include mq(tablet) {
             font-size: 14px;
         }
@@ -147,6 +156,7 @@
         &:focus {
             color: var(--white-text-color);
             background-color: var(--bgc_second-btn-color);
+            border-radius: 5px;
         }
     }
     &__copyright-text {
@@ -154,12 +164,14 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.52;
+        padding-bottom: 3px;
         @include mq(tablet) {
             line-height: 1.86;            
             letter-spacing: 0.02em;
+            padding-bottom: 8px;
         }
         @include mq(desktop) {
-
+            padding-bottom: 4px;
         }
         text-align: center;
         color: var(--grey-text-color);

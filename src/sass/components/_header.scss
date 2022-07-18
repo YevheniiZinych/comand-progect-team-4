@@ -94,8 +94,10 @@
     margin-left: auto;
 } 
 &__nav-item {
-    margin-right: 35px;
     color: white;
+}
+&__nav-item:not(:last-child) {
+        margin-right: 35px;
 }
 }
 }

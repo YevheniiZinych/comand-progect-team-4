@@ -12,6 +12,29 @@
         // background-position: bottom left 117px, top 83px left 36px;
         background-position: center bottom, center 83px;
         background-repeat: no-repeat;
+        animation: bgm 1000ms linear 1 forwards;
+        @keyframes bgm {
+            0% {
+background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+background-position: center bottom 700px, center 300px;
+            }
+            25% {
+background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+background-position: center bottom 500px, center 200px;
+            }
+            50% {
+background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+background-position: center bottom 300px, center 100px;
+            }
+            75% {
+background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+background-position: center bottom 100px, center 0px;
+            }
+            100% {
+background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+background-position: center bottom, center 83px;
+            }
+        }
 
     @include mq(tablet-only) {
     position: relative;
@@ -21,7 +44,35 @@
     background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
     url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
     background-repeat: no-repeat;
+    background-position: bottom left -300px, bottom 16px left 32px, bottom 1px right 32px, left 248px bottom 40px;
+    animation: bgt 2000ms linear 1 forwards;
+    @keyframes bgt {
+    0% {
+        background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
+    url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
+    background-position: bottom left -170px, bottom 400px left 32px, bottom 1px right -800px, left 248px bottom -440px;
+    }
+    25% {
+        background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
+    url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
+    background-position: bottom left 20px, bottom 300px left 32px, bottom 1px right -500px, left 248px bottom -340px;
+    }
+    50% {
+        background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
+    url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
+    background-position: bottom left 120px, bottom 200px left 32px, bottom 1px right -300px, left 248px bottom -240px;
+    }
+        75% {
+        background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
+    url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
+    background-position: bottom left 220px, bottom 100px left 32px, bottom 1px right -100px, left 248px bottom -140px;
+    }
+    100% {
+        background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
+    url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
     background-position: bottom left 322px, bottom 16px left 32px, bottom 1px right 32px, left 248px bottom 40px;
+    }
+}
     }
 
     @include mq(desktop) {
@@ -32,8 +83,50 @@
     url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
     background-repeat: no-repeat;
     background-position: right 328px bottom 0px, bottom 60px left 16px, bottom 1px right 16px, right 149px bottom 76px;
+    animation: bg 2000ms linear 1 forwards;
+    @keyframes bg {
+    0% {
+        background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
+    url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
+    background-position: right 328px bottom 700px, bottom 60px left 1600px, bottom -400px right 16px, right 1490px bottom 76px;
     }
+    25% {
+        background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
+    url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
+    background-position: right 328px bottom 500px, bottom 60px left 1000px, bottom -300px right 16px, right 900px bottom 76px;
     }
+    50% {
+        background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
+    url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
+    background-position: right 328px bottom 300px, bottom 60px left 600px, bottom -200px right 16px, right 600px bottom 76px;
+    }
+        75% {
+        background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
+    url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
+    background-position: right 328px bottom 100px, bottom 60px left 300px, bottom -100px right 16px, right 300px bottom 76px;
+    }
+    100% {
+        background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
+    url('../images/hero/slider-1-desktop.svg'), url('../images/hero/ellipse-desktop.svg');
+    background-position: right 328px bottom 0px, bottom 60px left 16px, bottom 1px right 16px, right 149px bottom 76px;
+    }
+}
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 &__title {
         width: 216px;

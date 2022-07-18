@@ -79,6 +79,15 @@ border: transparent;
 border-radius: 22px;
 font-family: 'DM Sans', 'Sans-serif';
 font-weight: 400;
+transition-property: background-color,;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+&:focus, &:hover {
+    background-color: var(--red-text-color);
+}
+&:focus, &:hover .hero__button-link {
+    color: var(--white-text-color);
+}
 @include mq(not-desktop) {
 font-size: 8px;
 line-height: calc(10 / 8);
@@ -92,17 +101,9 @@ padding: 5px, 10px;
     line-height: calc(18 / 14);
     padding: 10px;
 }
+}
 
-transition-property: background-color;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-duration: 250ms;
-&:focus, &:hover {
-    background-color: var(--red-text-color);
-}
-&:focus, &:hover .hero__button-link {
-    color: var(--white-text-color);
-}
-}
+
 @include mq(tablet) {
 .hero__button-paragraph {
     display: block;
@@ -119,6 +120,8 @@ transition-duration: 250ms;
     width: 18px;
     height: 18px;
     @include mq(desktop) {
+        width: 26px;
+        height: 26px;
         left: 229px;
         bottom: 180px;
     }

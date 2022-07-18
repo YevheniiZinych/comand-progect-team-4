@@ -25,7 +25,7 @@ display: inline-flex;
 .header__buy-button {
     display: inline-flex;
     justify-content: center;
-    background-image: url('../images/hero/arrow_white.svg');
+
     // background-repeat: no-repeat;
     // background-position: right 19px bottom 14px;
     font-family: 'DM Sans', 'Sans-serif';
@@ -46,8 +46,11 @@ transition-duration: 250ms;
 &:focus, &:hover {
     color: var(--white-text-color);
     background-color: var(--red-text-color);
-}
 
+}
+.header__buy-button:hover {
+        background-image: url('../images/header/arrow_white.svg');
+}
 
 
     @include mq(mobile-only) {

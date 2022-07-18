@@ -6,7 +6,7 @@
     <!-- Модальне вікно -->
     <div class="buy-modal">
       <!-- Кнопка закриття модального вікна -->
-      <button class="buy-modal__close-btn" data-modal-close aria-label="Close modal">
+      <button class="buy-modal__close-btn" data-modal-close  aria-label="Close modal">
         <svg class="buy-modal__close-icon" width="14" height="14">
           <use href="./images/modal-windows/header.svg#close-icon"></use>
         </svg>
@@ -150,7 +150,7 @@
             </ul>
           </nav>
         </div>
-
+    </div>
 
 
 
@@ -166,11 +166,9 @@
             </svg>
         </button>
         <form action="#" class="location-form">
-            <p class="location-form__title">Our location</p>
-            <address
-            class="local">
-            <a href="https://www.google.com/maps/place/%D0%93%D0%BB%D0%BE%D0%B1%D1%83%D1%81/@50.4494135,30.5240822,16.25z/data=!4m5!3m4!1s0x40d4ce517313ffff:0xa447b8f0aa513128!8m2!3d50.4491307!4d30.5259904"></a>  
-            </address>
+            <p class="location-form__title">--Our location--</p>
+            <iframe class="local" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5082.228854492167!2d30.520296757170627!3d50.438969246118994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9e2591553d0f42!2sGulliver%20Tower%20B!5e0!3m2!1sru!2sua!4v1658089443200!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </form>
     </div>
 </div>
@@ -181,7 +179,7 @@
 
 
 <!--FRANCHISE-->
-<div class="backdrop is-hidden" data-modal-fr>
+<div class="contacts-franchise backdrop is-hidden" data-modal-fr>
     <div class="franchise-modal">
          <button type="button" class="contacts-franchise-close contacts-franchise-modal-close" data-modal-close-fr>
              <svg class="franchise-modal__close-icon" width="18px" height="18px">
@@ -223,6 +221,7 @@
 
             <label class="franchise-checkbox">
                 <input class="franchise-checkbox__input" type="checkbox" name="agree" value="agree" />
+
                 <span class="franchise-checkbox__icon"> </span>
                 <span class="franchise-checkbox__text">I accept the terms of the agreement</span>
             </label>

@@ -18,16 +18,16 @@
 }
 }
 .header .modal {
-margin-left: auto;
-margin-right: auto;
+display: inline-flex;
 }
 
 
 .header__buy-button {
-    display: block;
-    background-image: url('../images/hero/arrow.svg');
-    background-repeat: no-repeat;
-    background-position: right 19px bottom 14px;
+    display: inline-flex;
+    justify-content: center;
+    background-image: url('../images/hero/arrow_white.svg');
+    // background-repeat: no-repeat;
+    // background-position: right 19px bottom 14px;
     font-family: 'DM Sans', 'Sans-serif';
     font-weight: 700;
     font-size: 16px;
@@ -40,6 +40,16 @@ margin-right: auto;
     color: var(--red-text-color);
     border-color: transparent;
     background-color: var(--white-text-color);
+transition-property: background-color,;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+&:focus, &:hover {
+    color: var(--white-text-color);
+    background-color: var(--red-text-color);
+}
+
+
+
     @include mq(mobile-only) {
     min-width: 209px;
     margin-bottom: 19px;
@@ -86,8 +96,13 @@ transition-duration: 250ms;
 &:focus, &:hover {
     background-color: var(--red-text-color);
 }
-&:focus, &:hover .hero__button-link {
+&:focus .hero__button-link, &:hover .hero__button-link {
     color: var(--white-text-color);
+}
+&:focus .button-icon, &:hover .button-icon {
+    stroke: black;
+    color: black;
+    fill: black;
 }
 @include mq(not-desktop) {
 font-size: 8px;
@@ -133,6 +148,5 @@ padding: 5px, 10px;
 display: none;
 }
 }
-        
 
 

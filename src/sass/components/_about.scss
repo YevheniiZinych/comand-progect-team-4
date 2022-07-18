@@ -1,6 +1,5 @@
 .about {
   padding-top: 60px;
-  margin-bottom: 40px;
   background-color: var(--bgc-first_section-color);
   @include mq(mobile-only) {
     background-image: url('../images/about/cow_milk_mobile.png');
@@ -15,12 +14,12 @@
   }
   @include mq(tablet-only) {
     padding-top: 60px;
-    margin-bottom: 60px;
+    background-color: var(--bgc-first_section-color);
   }
   @include mq(desktop) {
     display: block;
     padding-top: 60px;
-    margin-bottom: 40px;
+    background-color: var(--bgc-first_section-color);
     background-image: url('../images/about/cow_milk_desktop.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -216,6 +215,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
+    background-color: var(--white-text-color);
     color: var(--red-text-color);
     border: none;
     border-radius: 22px;

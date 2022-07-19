@@ -39,10 +39,12 @@ padding-right: 20px;
     color: var(--red-text-color);
     border-color: transparent;
     background-color: var(--white-text-color);
-    transition-property: background-color,;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    &:focus, &:hover {
+transition-property: background-color,;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 250ms;
+    cursor: pointer;
+&:focus, &:hover {
+
     color: var(--white-text-color);
     background-color: var(--red-text-color);
     background-image: url('../images/hero/arrow.svg');

@@ -266,16 +266,21 @@
     bottom: 14px;
     fill: var(--black-text-color);
     transition: fill 250ms var(--transition-timing);
-    .modal-form__input:focus + & {
+    .modal-form__input:focus + &,
+    .modal-form__input:hover + & {
       fill: var(--red-text-color);
+      
     }
   }
   
-  .modal-form__input .modal-form__icon:hover,
-  .modal-form__input .modal-form__icon:focus {
-    fill: var(--red-text-color);
-    border-color: var(--red-text-color);
-    color: var(--red-text-color);
+  .modal-form__input {
+      &:hover, &:focus {
+      border-color: var(--red-text-color);
+      }
+      
+  &:not(:placeholder-shown) {
+      border-color: var(--red-text-color);
+      }
   }
 
   .send-btn {

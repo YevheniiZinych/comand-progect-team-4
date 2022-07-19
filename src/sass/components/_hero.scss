@@ -1,39 +1,72 @@
 
 
     .hero {
+
             background-color: #ffb8ca;
+
         position: relative;
+        @include mq(mobile-only) {
+            
+            background-image: url('../images/hero/ellipse-tablet.svg');
+            background-repeat: no-repeat;
+        animation: bgh 1000ms linear 1 forwards;
+        @keyframes bgh {
+            0% {
+        background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top -153px  left 36px;
+            }
+            25% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top -103px  left 36px;
+            }
+            50% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top -53px  left 36px;
+            }
+            75% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position:  top 13px  left 36px;
+            }
+            100% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top 83px  left 36px;
+        }
+        }
+        }
+
+
+
+
 &__container {
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     height: 502px;
-    background-color: #ffb8ca;
-        background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+        background-image:  url('../images/hero/icecrem.svg'); 
 
-        background-position: top 92px left 117px, top 83px  left 36px;
+        background-position: top 92px left 117px;
         background-repeat: no-repeat;
         animation: bgm 1000ms linear 1 forwards;
         @keyframes bgm {
             0% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 292px left 117px, top -153px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 292px left 117px;
             }
             25% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 252px left 117px, top -103px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 252px left 117px;
             }
             50% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 202px left 117px, top -53px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 202px left 117px;
             }
             75% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 152px left 117px, top 23px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 152px left 117px;
             }
             100% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 92px left 117px, top 83px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 92px left 117px; 
             }
         }
 
@@ -156,7 +189,6 @@ background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellips
         margin-bottom: 24px;
         }
         }
-}
 .hero__title-word {
         color: var(--red-text-color);
         font-weight: 400;
@@ -389,4 +421,19 @@ from {
 to {
     background-position: 0 450px;
 }
+
 }
+
+}
+    }
+
+// @media screen and (min-width: 400px) and (max-width: 767px) {
+//         .hero {
+//         background-color: #ffb8ca;
+//         position: relative;
+//             background-image: url('../images/hero/ellipse-tablet.svg');
+//             background-repeat: no-repeat;
+//             background-position: center;
+//         }
+//     }
+

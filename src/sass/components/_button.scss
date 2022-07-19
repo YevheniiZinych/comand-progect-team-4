@@ -1,6 +1,9 @@
 
-
+.header .modal {
+display: inline-flex;
+}
 .header .not-modal{
+padding-right: 20px;
 @include mq(mobile-only) {
     display: none;
 }
@@ -9,7 +12,6 @@
     margin-right: 0px;
     margin-left: 32px;
     min-width: 160px;
-    padding: 0px;
 }
 @include mq(desktop) {
     order: 1;
@@ -17,42 +19,37 @@
     margin-left: 0px;
 }
 }
-.header .modal {
-display: inline-flex;
-}
-
-
 .header__buy-button {
+    padding-right: 20px;
     display: inline-flex;
     justify-content: center;
-
-    // background-repeat: no-repeat;
-    // background-position: right 19px bottom 14px;
+    background-image: url('../images/hero/arrow-red.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: right 30px top 15px;
+    padding:-right 40px;
     font-family: 'DM Sans', 'Sans-serif';
     font-weight: 700;
     font-size: 16px;
     line-height: calc(21/16);
     align-items: center;
     text-align: center;
-    color: var(--red-text-color);
     min-height: 44px;
     border-radius: 22px;
     color: var(--red-text-color);
     border-color: transparent;
     background-color: var(--white-text-color);
-transition-property: background-color,;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-duration: 250ms;
-&:focus, &:hover {
+    transition-property: background-color,;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    &:focus, &:hover {
     color: var(--white-text-color);
     background-color: var(--red-text-color);
-
+    background-image: url('../images/hero/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: right 30px top 15px;
 }
-.header__buy-button:hover {
-        background-image: url('../images/header/arrow_white.svg');
-}
-
-
     @include mq(mobile-only) {
     min-width: 209px;
     margin-bottom: 19px;
@@ -82,7 +79,6 @@ transition-duration: 250ms;
     margin-right: 12px;
     }
 }
-
 .hero__button {
 background-color: var(--white-text-color);
 color: var(--red-text-color);
@@ -102,11 +98,6 @@ transition-duration: 250ms;
 &:focus .hero__button-link, &:hover .hero__button-link {
     color: var(--white-text-color);
 }
-&:focus .button-icon, &:hover .button-icon {
-    stroke: black;
-    color: black;
-    fill: black;
-}
 @include mq(not-desktop) {
 font-size: 8px;
 line-height: calc(10 / 8);
@@ -121,8 +112,6 @@ padding: 5px, 10px;
     padding: 10px;
 }
 }
-
-
 @include mq(tablet) {
 .hero__button-paragraph {
     display: block;

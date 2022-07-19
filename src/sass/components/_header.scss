@@ -1,11 +1,11 @@
-.qwer {
+.header__box {
     position: relative;
 }
 .header__container {
     width: 100%;
     position: absolute;
     display: flex;
-    z-index: 55;
+    z-index: 5;
     justify-content: space-between;
     margin-top: 8px;
     @include mq(tablet-only) {
@@ -15,7 +15,6 @@
     @include mq(desktop) {
         margin-top: 39px;
         align-items: center;
-        padding-top: 37px;
         display: flex;
         align-items: center;
         justify-content: space-between;

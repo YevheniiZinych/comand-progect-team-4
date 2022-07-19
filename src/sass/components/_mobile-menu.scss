@@ -3,7 +3,6 @@
 @include mq(mobile-only) {
         width: 100%;
         }
-
         @include mq(not-desktop) {
         flex-direction: column;
         align-items: center;
@@ -14,7 +13,7 @@
         top: 0;
         left: 0;
         display: flex;
-        z-index: 250;
+        z-index: 25000;
         transform: translateX(100%);
         @include mq(tablet-only) {
         transform: translateX(700%);

@@ -1,7 +1,9 @@
 
 
     .hero {
-        background-color: #ffb8ca;
+
+            background-color: #ffb8ca;
+
         position: relative;
         @include mq(mobile-only) {
             
@@ -419,6 +421,9 @@ from {
 to {
     background-position: 0 450px;
 }
+
+}
+
 }
     }
 
@@ -431,3 +436,4 @@ to {
 //             background-position: center;
 //         }
 //     }
+

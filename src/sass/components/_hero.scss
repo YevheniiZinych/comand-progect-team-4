@@ -1,9 +1,5 @@
-
-
-    .hero {
-
-            background-color: #ffb8ca;
-
+ .hero {
+        background-color: #ffb8ca;
         position: relative;
         @include mq(mobile-only) {
             
@@ -421,18 +417,5 @@ from {
 to {
     background-position: 0 450px;
 }
-
 }
-
-}
-
-// @media screen and (min-width: 400px) and (max-width: 767px) {
-//         .hero {
-//         background-color: #ffb8ca;
-//         position: relative;
-//             background-image: url('../images/hero/ellipse-tablet.svg');
-//             background-repeat: no-repeat;
-//             background-position: center;
-//         }
-//     }
-
+    }

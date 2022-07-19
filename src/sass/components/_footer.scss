@@ -1,5 +1,12 @@
 .footer {
-    position: relative;
+    @include mq(not-desktop) {
+        position: relative;
+    }
+    &__container {
+        @include mq(desktop) {
+            position: relative;
+        }
+    }
     & {
         background-color: var(--bgc-first_section-color);
     }
@@ -68,7 +75,7 @@
                 line-height: 1.14;
                 letter-spacing: 0.06em;
 
-                max-width: 474px;
+                /* max-width: 474px; */
                 margin-top: 16px;
             }
         
@@ -81,6 +88,9 @@
         margin-top: 40px;
         @include mq(tablet) {
             margin-top: 60px;
+        }
+        @include mq(desktop) {
+            margin-top: 13px;
         }
         margin-bottom: 40px;
         margin-right: 0;
@@ -183,19 +193,29 @@
     
     }
     &::after {
-        @include pseudo;
-        border: 1px solid #E1E1E1;
-        width: 100%;
-        left: 0;
-        @include mq(mobile-only) {
-            bottom: 61px;
+        @include mq(not-desktop) {
+            @include pseudo;
+                border: 1px solid #E1E1E1;
+                width: 100%;
+            
+                @include mq(mobile-only) {
+                    bottom: 61px;
+                }
+            
+                @include mq(tablet) {
+                    bottom: 42px;
+                }
         }
-        @include mq(tablet) {
-            bottom: 42px;
-        }
-        @include mq(desktop) {
-            bottom: 37px;
-        }
+        
     }
+        &__container::after {
+            @include mq(desktop) {
+                @include pseudo;
+                border: 1px solid #E1E1E1;
+                width: 100%;
+                max-width: 1167px;
+                bottom: 37px;
+            }
+        }
     
 }

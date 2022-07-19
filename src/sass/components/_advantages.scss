@@ -1,7 +1,7 @@
 @keyframes appear {
     0% {
-      transform: scale(50%);
-      opacity: 0.5;
+      transform: scale(80%);
+      opacity: 0.9;
     }
     100% {
       transform: scale(100%);
@@ -117,7 +117,7 @@
     height: 50px;
     background-image: url('../images/advantages/adv-1.png');
 
-    animation: appear 10s linear infinite;
+    animation: appear 5s linear infinite;
     animation-direction: alternate;
     
     @media (min-device-pixel-ratio: 2),
@@ -180,7 +180,7 @@
     height: 50px;
     background-image: url('../images/advantages/adv-2.png');
 
-    animation: appear 10s linear infinite;
+    animation: appear 5s linear infinite;
     animation-direction: alternate;
 
     @media (min-device-pixel-ratio: 2),
@@ -242,7 +242,7 @@
     height: 50px;
     background-image: url('../images/advantages/adv-3.png');
 
-    animation: appear 10s linear infinite;
+    animation: appear 5s linear infinite;
     animation-direction: alternate;
 
     @media (min-device-pixel-ratio: 2),

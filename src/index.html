@@ -78,14 +78,6 @@
     <script src="./js/modal-2.js"></script>
     
     
-    <script>
-  document.querySelector('.hero-modal-close-btn').addEventListener('click', () => {
-    document
-      .getElementById('my-video')
-      .contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-  });
-</script>
-
 <script>$(document).ready(function(){     
   $(".hero-modal-close-btn").click(function(){
   setTimeout(

@@ -1,44 +1,76 @@
 
 
     .hero {
+        background-color: #ffb8ca;
         position: relative;
+        @include mq(mobile-only) {
+            
+            background-image: url('../images/hero/ellipse-tablet.svg');
+            background-repeat: no-repeat;
+        animation: bgh 1000ms linear 1 forwards;
+        @keyframes bgh {
+            0% {
+        background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top -153px  left 36px;
+            }
+            25% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top -103px  left 36px;
+            }
+            50% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top -53px  left 36px;
+            }
+            75% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position:  top 13px  left 36px;
+            }
+            100% {
+background-image: url('../images/hero/ellipse-tablet.svg');
+        background-position: top 83px  left 36px;
+        }
+        }
+        }
+
+
+
+
 &__container {
-    width: 100%;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     height: 502px;
-    background-color: #ffb8ca;
-        background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
+        background-image:  url('../images/hero/icecrem.svg'); 
 
-        background-position: top 92px left 117px, top 83px  left 36px;
+        background-position: top 92px left 117px;
         background-repeat: no-repeat;
         animation: bgm 1000ms linear 1 forwards;
         @keyframes bgm {
             0% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 292px left 117px, top -153px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 292px left 117px;
             }
             25% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 252px left 117px, top -103px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 252px left 117px;
             }
             50% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 202px left 117px, top -53px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 202px left 117px;
             }
             75% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 152px left 117px, top 23px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 152px left 117px;
             }
             100% {
-background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellipse-tablet.svg');
-        background-position: top 92px left 117px, top 83px  left 36px;
+background-image:  url('../images/hero/icecrem.svg');
+        background-position: top 92px left 117px; 
             }
         }
 
     @include mq(tablet-only) {
     position: relative;
-    
+        max-width: 768px;
     height: 416px;
     background-color: #ffb8ca;
     background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
@@ -50,22 +82,22 @@ background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellips
     0% {
         background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
     url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
-    background-position: bottom left -170px, bottom 400px left 32px, bottom 1px right -800px, left 248px bottom -440px;
+    background-position: bottom left -170px, bottom 416px left 32px, bottom 1px right -800px, left 248px bottom -440px;
     }
     25% {
         background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
     url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
-    background-position: bottom left 20px, bottom 300px left 32px, bottom 1px right -500px, left 248px bottom -340px;
+    background-position: bottom left 20px, bottom 316px left 32px, bottom 1px right -500px, left 248px bottom -340px;
     }
     50% {
         background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
     url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
-    background-position: bottom left 120px, bottom 200px left 32px, bottom 1px right -300px, left 248px bottom -240px;
+    background-position: bottom left 120px, bottom 216px left 32px, bottom 1px right -300px, left 248px bottom -240px;
     }
         75% {
         background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
     url('../images/hero/slider-pic-tablet1.svg'), url('../images/hero/ellipse-tablet.svg');
-    background-position: bottom left 220px, bottom 100px left 32px, bottom 1px right -100px, left 248px bottom -140px;
+    background-position: bottom left 220px, bottom 116px left 32px, bottom 1px right -100px, left 248px bottom -140px;
     }
     100% {
         background-image: url('../images/hero/ice-cream-tablet.svg'), url('../images/hero/slider-pic-tablet.svg'), 
@@ -76,7 +108,8 @@ background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellips
     }
 
     @include mq(desktop) {
-    
+        position: relative;
+    max-width: 1200px;
     height: 664px;
     background-color: #ffb8ca;
     background-image: url('../images/hero/ice-cream-desktop.svg'), url('../images/hero/slider-desktop.svg'), 
@@ -154,7 +187,6 @@ background-image:  url('../images/hero/icecrem.svg'), url('../images/hero/ellips
         margin-bottom: 24px;
         }
         }
-}
 .hero__title-word {
         color: var(--red-text-color);
         font-weight: 400;
@@ -228,14 +260,6 @@ margin-left: 16px;
 }
 }
 }
-
-.hero__button-paragraph:hover, 
-.hero__button-paragraph:focus {
-    cursor: pointer;
-    fill: #fff;
-}
-
-
 .hero {
 &__content-item {
 background-repeat: no-repeat;
@@ -243,19 +267,18 @@ background-position: right top;
 display: flex;
 flex-direction: column;
 @include mq(tablet) {
-background-image: url('../images/hero/ellipse-white.svg');
 &:first-child {
 margin-bottom: 17px;
 }
 }
 @include mq(desktop) {
-background-image: url('../images/hero/ellipse-white-desktop.svg');
 &:first-child {
 margin-bottom: 35px;
 }
 }
 }
 &__content-number {
+z-index: 1;
 color: var(--red-text-color);
 font-family: 'Titan One', 'Sans-serif';
 font-weight: 400;
@@ -306,4 +329,105 @@ bottom: 84px;
     height: 320px;
     display: flex;
     
-  }
+}
+
+
+
+
+
+.hero_content-item-circle {
+position: absolute;
+animation: CircleMove 1500ms linear 1 forwards;
+@include mq(tablet-only) {
+left: 25px;
+width: 20px;
+height: 20px;
+}
+@include mq(desktop) {
+left: 40px;
+width: 30px;
+height: 30px;
+
+}
+@keyframes CircleMove {
+    0% {
+left: 125px;
+    }
+    25% {
+left: 100px;
+    }
+        50% {
+left: 75px;
+    }
+        75% {
+left: 50px;
+    }
+        100% {
+@include mq(tablet-only) {
+left: 25px;
+}
+@include mq(desktop) {
+    left: 40px;
+}
+
+    }
+}
+
+border-radius: 50%;
+box-sizing: border-box;
+
+overflow: hidden;
+}
+
+.hero_content-item-circle::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+@include mq(tablet-only) {
+  background: repeating-linear-gradient(
+      white 0%,
+      white 5px,
+      var(--cream-text-color) 5px,
+      var(--cream-text-color) 10px,
+      white 10px,
+      white 15px,
+      var(--cream-text-color) 15px,
+      var(--cream-text-color) 20px);
+}
+@include mq(desktop) {
+      background: repeating-linear-gradient(
+      white 0%,
+      white 7.5px,
+      var(--cream-text-color) 7.5px,
+      var(--cream-text-color) 15px,
+      white 15px,
+      white 22.5px,
+      var(--cream-text-color) 22.5px,
+      var(--cream-text-color) 30px);
+}
+  transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+from {
+    background-position: 0;
+}
+
+to {
+    background-position: 0 450px;
+}
+}
+    }
+
+// @media screen and (min-width: 400px) and (max-width: 767px) {
+//         .hero {
+//         background-color: #ffb8ca;
+//         position: relative;
+//             background-image: url('../images/hero/ellipse-tablet.svg');
+//             background-repeat: no-repeat;
+//             background-position: center;
+//         }
+//     }

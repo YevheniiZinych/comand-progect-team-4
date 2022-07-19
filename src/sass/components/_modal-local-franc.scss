@@ -263,15 +263,22 @@
   left: 16px;
   transform: translateY(-50%);
   fill: var(--red-text-color);
-  .franchise-form__input:focus ~ & {
-    fill: var(--bgc_second-btn-color);
-  }
+  //    .franchise-form__input:focus + &,
+  //    .franchise-form__input:hover + & {
+  //   fill: green;
+  // }
 }
+
 .franchise-form-field__input {
-  &:focus {
-    border: 1px solid var(--bgc_second-btn-color);
+  &:hover {
+    border: 1px solid rgb(119, 19, 119);
+  }
+   &:focus  {
+    border: 1px solid green;
   }
 }
+
+
 .franchise-form__button {
   display: block;
   width: 150px;

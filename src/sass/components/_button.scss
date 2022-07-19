@@ -23,7 +23,7 @@ padding-right: 20px;
     padding-right: 20px;
     display: inline-flex;
     justify-content: center;
-    background-image: url('../images/hero/arrow-red.svg');
+
     background-repeat: no-repeat;
     background-size: 10px 10px;
     background-position: right 30px top 15px;
@@ -117,7 +117,7 @@ padding: 5px, 10px;
 @include mq(tablet) {
 .hero__button-paragraph {
     display: block;
-    background-image: url('../images/hero/arrow-right.jpg');
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

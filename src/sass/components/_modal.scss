@@ -37,6 +37,10 @@
   background: linear-gradient(to left, #ee9ca7, #ffdde1);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
 
+    background-image: url(../images/modal-windows/read-more.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%);
   }
@@ -121,7 +125,21 @@
   font-style: 'DM Sans', sans-serif;
   font-size: 16px;
   line-height: 1.12;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(83, 45, 83);
+  background-color: rgba(255, 255, 255, 0.281) ;
 }
+
+.modal-read-more_description-text2 {
+  font-style: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.12;
+  
+  color: rgb(68, 12, 68);
+  // background-color: rgba(255, 255, 255, 0.281);
+}
+
 
 .modal-read-more__icon {
   position: absolute;
@@ -162,6 +180,8 @@
   line-height: 1.12;
   text-align: center;
 }
+
+
 
 
 

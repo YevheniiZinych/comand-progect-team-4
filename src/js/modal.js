@@ -32,6 +32,20 @@
   }
 })();
 
+
+
+// Закрыть видео с потерей звука
+// $('body').on('click','.js-trailer',function(){
+//   $("#trailer-box").dialog({
+//     modal: false,
+//     show: 'fade',
+//     hide: 'fade',
+//     width: 800,
+//     close: function(event) {$('.dleplyrplayer video').trigger('pause'); }
+//   });	
+//   return false;
+// });
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open-ice]"),
@@ -154,6 +168,12 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+
+
+
+
+
 
 
 

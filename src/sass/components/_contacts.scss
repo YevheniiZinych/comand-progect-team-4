@@ -14,15 +14,15 @@
     margin-top: 60px;
     padding-bottom: 40px;
     background-color: #FFF5F6;
-    background: linear-gradient(to top, #FFF5F6 78%, #fff 25%);
+    background: linear-gradient(#fff 22%, #FFF5F6 22%);
     @media screen and (min-width: 768px) {
         margin-top: 80px;
-        background: linear-gradient(to top, #FFF5F6 56%, #fff 46%);
+        background: linear-gradient(#fff 44%, #FFF5F6 44%);
     }
     @media screen and (min-width: 1200px) {
         margin-top: 120px;
         padding-bottom: 109px;
-        background: linear-gradient(to top, #FFF5F6 82%, #fff 18%);
+        background: linear-gradient(#fff 15%, #FFF5F6 8%);
     }
 }
 .container {

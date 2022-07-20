@@ -231,6 +231,11 @@
             border: 4px solid #D31342;
 		}
 
+.slick-dots li:not(:first-child) button:hover,
+.slick-dots li:not(:first-child) button:focus {
+            border: 4px solid #D31342;
+		}
+
 .slick-dots li:nth-child(1).slick-active button{
     border: none;
 }
@@ -247,6 +252,10 @@
 }
 
 .slick-dots li:nth-child(1).slick-active button::after{
+    background-image: url(../images/reviews/slider-btn.svg);
+}
+
+.slick-dots li:nth-child(1):hover button::after{
     background-image: url(../images/reviews/slider-btn.svg);
 }
 

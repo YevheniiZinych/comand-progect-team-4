@@ -274,7 +274,7 @@
     display: flex;
   }
 
-  .hero_content-item-circle {
+  .hero__content-item-circle {
     position: absolute;
     animation: CircleMove 1500ms linear 1 forwards;
     @include mq(tablet-only) {
@@ -307,7 +307,7 @@
     overflow: hidden;
   }
 
-  .hero_content-item-circle::before {
+  .hero__content-item-circle::before {
     content: '';
     position: absolute;
     width: 150%;

@@ -25,7 +25,7 @@
 
   background-repeat: no-repeat;
   background-size: 10px 10px;
-  background-position: right 30px top 15px;
+  background-position: right 18px top 19px;
   padding: -right 40px;
   font-family: 'DM Sans', 'Sans-serif';
   font-weight: 700;
@@ -38,6 +38,8 @@
   color: var(--red-text-color);
   border-color: transparent;
   background-color: var(--white-text-color);
+  background-image: url('../images/hero/arrow-2.svg');
+  background-repeat: no-repeat;
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -48,8 +50,6 @@
     background-color: var(--red-text-color);
     background-image: url('../images/hero/arrow.svg');
     background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: right 30px top 15px;
   }
   @include mq(mobile-only) {
     min-width: 209px;
@@ -58,6 +58,9 @@
   @include mq(tablet-only) {
     min-width: 184px;
     margin-bottom: 20px;
+  }
+  @include mq(desktop) {
+    background-position: right 18px top 17px;
   }
 }
 @include mq(desktop) {
@@ -118,25 +121,34 @@
 }
 @include mq(tablet) {
   .hero__button-paragraph {
-    display: block;
-    background-image: url('../images/header/arrow-right.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    fill: var(--bgc_second-btn-color);
     background-color: var(--white-text-color);
-    // position: absolute;
-    left: 184px;
-    bottom: 56px;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
-    border-color: transparent;
     width: 18px;
     height: 18px;
+    border: none;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
     @include mq(desktop) {
       width: 26px;
       height: 26px;
       left: 229px;
       bottom: 180px;
     }
+    &:hover,
+    &:focus {
+      fill: #fff;
+      background-color: var(--bgc_second-btn-color);
+    }
+  }
+  .hero__button-paragraph-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .hero__button-paragraph {

@@ -19,7 +19,7 @@
   display: inline-flex;
 }
 
-.header__buy-button {
+.header__buy-button-menu {
   display: inline-flex;
   justify-content: center;
   background-repeat: no-repeat;
@@ -39,6 +39,10 @@
   color: var(--red-text-color);
   border-color: transparent;
   background-color: var(--white-text-color);
+  background-image: url('../images/hero/arrow-2.svg');
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: right 46px top 16px;
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -46,9 +50,10 @@
   &:hover {
     color: var(--white-text-color);
     background-color: var(--red-text-color);
-  }
-  .header__buy-button:hover {
-    // background-image: url('../images/header/arrow_white.svg');
+    background-image: url('../images/hero/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: right 46px top 16px;
   }
 
   @include mq(mobile-only) {
@@ -132,16 +137,13 @@
 }
 @include mq(tablet) {
   .hero__button-paragraph {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    fill: var(--bgc_second-btn-color);
     background-color: var(--white-text-color);
-    // position: absolute;
-    left: 184px;
-    bottom: 56px;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
-    border-color: transparent;
+    border: none;
     width: 18px;
     height: 18px;
     cursor: pointer;
@@ -168,13 +170,13 @@
   display: flex;
   z-index: 5;
   justify-content: space-between;
-  margin-top: 8px;
+  padding-top: 8px;
   @include mq(tablet-only) {
-    margin-top: 32px;
+    padding-top: 32px;
     z-index: 2;
   }
   @include mq(desktop) {
-    margin-top: 39px;
+    padding-top: 39px;
     align-items: center;
     display: flex;
     align-items: center;
